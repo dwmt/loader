@@ -2,8 +2,12 @@ const chai = require('chai')
 
 const expect = chai.expect
 
-describe('Loader tests', () => {
-	it('should true', () => {
-		expect(true).to.be.true
+const LoaderContainer = require('../lib/LoaderContainer')
+
+let loaderContainer = new LoaderContainer()
+
+describe('Loader container tests', () => {
+	it('should exist', () => {
+		expect(loaderContainer).to.exist
 	})
 })
