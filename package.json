@@ -4,7 +4,7 @@
   "description": "Simple loader component for your SPAs",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/**/*.test.js"
+    "test": "npx mocha test/**/*.test.js"
   },
   "repository": {
     "type": "git",
