@@ -1,0 +1,50 @@
+{
+  "name": "@dwmt/loader",
+  "version": "1.0.0",
+  "description": "Simple loader component for your SPAs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha test/**/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwmt/loader.git"
+  },
+  "keywords": [
+    "loader",
+    "vue",
+    "react",
+    "angular",
+    "component",
+    "javascript",
+    "nodejs",
+    "easy",
+    "dont",
+    "waste",
+    "more",
+    "time",
+    "burn",
+    "out"
+  ],
+  "contributors": [
+    {
+      "name": "Lajos Kovács",
+      "email": "lajoskvcs@icloud.com",
+      "url": "https://lajoskvcs.com"
+    },
+    {
+      "name": "Gergely Szabó",
+      "email": "gergely0116@gmail.com",
+      "url": "https://github.com/Baxi0116"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dwmt/loader/issues"
+  },
+  "homepage": "https://github.com/dwmt/loader#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1"
+  }
+}
