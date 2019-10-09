@@ -1,5 +1,5 @@
 const LoaderContainer = require('./lib/LoaderContainer')
 
-let loaderContainer = new LoaderContainer()
+const loaderContainer = new LoaderContainer()
 
 module.exports = loaderContainer
