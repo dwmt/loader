@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npx mocha test/**/*.test.js",
     "coverage": "npx nyc npm run test",
-    "report-coverage": " npx nyc npm run test --reporter=lcov"
+    "report-coverage": " npx nyc --reporter=lcov npm run test"
   },
   "repository": {
     "type": "git",

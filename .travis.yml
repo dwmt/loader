@@ -11,4 +11,4 @@ install:
 script:
   - npm run report-coverage
   - codecov
-  - codacy-coverage
+  - cat ./coverage/lcov.info | codacy-coverage
