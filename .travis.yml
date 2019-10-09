@@ -4,9 +4,11 @@ node_js:
   - "node"
 
 install:
-  - npm install
+  - npm i
   - npm i -g codecov
+  - npm i -g codacy-coverage
 
 script:
   - npm run report-coverage
   - codecov
+  - codacy-coverage
