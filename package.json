@@ -1,11 +1,12 @@
 {
   "name": "@dwmt/loader",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Simple loader component for your SPAs",
   "main": "./dist/index.js",
   "module": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
   "scripts": {
+		"prepublishOnly": "npm run build",
     "build": "rimraf dist && bili",
     "test": "jest",
     "test:watch": "jest --watch",
