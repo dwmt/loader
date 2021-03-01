@@ -1,13 +1,17 @@
 {
   "name": "@dwmt/loader",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple loader component for your SPAs",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "npx mocha test/**/*.test.js",
-    "test:watch": "npx mocha test/**/*.test.js --watch",
-    "coverage": "npx nyc npm run test",
-    "report-coverage": " npx nyc --reporter=lcov npm run test"
+    "build": "rimraf dist && bili",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "coverage": "jest --coverage",
+    "report-coverage": "npx nyc --reporter=lcov npm run test",
+    "lint": "eslint . --ext .ts"
   },
   "repository": {
     "type": "git",
@@ -47,15 +51,15 @@
   },
   "homepage": "https://github.com/dwmt/loader#readme",
   "devDependencies": {
-    "chai": "^4.2.0",
-    "eslint": "^6.5.1",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "mocha": "^6.2.1",
-    "nyc": "^14.1.1",
-    "sinon": "^7.5.0"
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.22",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "@typescript-eslint/parser": "^4.14.1",
+    "bili": "^5.0.5",
+    "eslint": "^7.18.0",
+    "jest": "^26.6.3",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.3"
   }
 }

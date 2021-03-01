@@ -1,0 +1,6 @@
+lib/
+coverage/
+.nyc_output/
+.vscode/
+test/
+.travis.yml
