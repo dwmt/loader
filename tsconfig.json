@@ -1,18 +1,32 @@
 {
-  "typeAcquisition": {
-    "include": ["jest"]
-  },
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["es2015"],
-    "strict": true,
-    "declaration": true,
-    "outDir": "dist",
-    "sourceMap": true,
-    "types": ["node", "jest"]
-  },
-  "include": ["lib/**/*"],
-  "exclude": ["node_modules", "**/*.test.ts"]
+	"typeAcquisition": {
+		"include": [
+			"jest"
+		]
+	},
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"lib": [
+			"es2015"
+		],
+		"strict": true,
+		"composite": true,
+		"incremental": true,
+		"declaration": true,
+		"outDir": "dist",
+		"sourceMap": true,
+		"types": [
+			"node",
+			"jest"
+		]
+	},
+	"include": [
+		"src/**/*",
+		"index.ts"
+	],
+	"exclude": [
+		"node_modules",
+		"**/*.test.ts"
+	]
 }
-
